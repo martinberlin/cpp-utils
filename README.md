@@ -8,6 +8,19 @@ All that I did is to copy his files and enable them to be added as a ESP-IDF sub
 And this great resource should be compiled and available in your ESP-IDF Project.
 I may update this from time to time if I find compiling errors, just file an Issue, and add how to reproduce it, if you find one.
 
+### Enabling C++ exception handling
+
+Note from **martinberlin**
+If you get this when compiling:
+
+error: #error "C++ exception handling must be enabled within make menuconfig. See Compiler Options > Enable C++ Exceptions."
+
+Follow the recommendation and enable the C++ exceptions using menuconfig
+
+    idf.py -D IDF_TARGET=esp32 menuconfig
+
+After this line nkolban original Readme file is copied without any alterations:
+
 # CPP Utils
 This directory contains a wealth of C++ classes that have been found useful when working in C++ in conjunction
 with the ESP-IDF.  The classes have been documented using `doxygen` so one can run a doxygen processor over them
