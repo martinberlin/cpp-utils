@@ -39,7 +39,6 @@
 #ifndef MAIN_WIFIEVENTHANDLER_H_
 #define MAIN_WIFIEVENTHANDLER_H_
 #include <esp_event.h>
-#include <esp_event_loop.h>
 
 /**
  * @brief %WiFi state event handler.

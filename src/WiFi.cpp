@@ -15,7 +15,7 @@
 
 #include "WiFi.h"
 #include <esp_event.h>
-#include <esp_event_loop.h>
+#include <esp_event.h>
 #include <esp_log.h>
 #include <esp_system.h>
 #include <esp_wifi.h>
@@ -217,10 +217,12 @@ uint8_t WiFi::connectAP(const std::string& ssid, const std::string& password, bo
 void WiFi::dump() {
 	ESP_LOGD(LOG_TAG, "WiFi Dump");
 	ESP_LOGD(LOG_TAG, "---------");
-	char ipAddrStr[30];
+	// TODO FIX:
+	// error: conversion from 'const ip_addr_t*' {aka 'const ip_addr*'} to non-scalar type 'ip_addr_t' {aka 'ip_addr'} requested
+	/* char ipAddrStr[30];
 	ip_addr_t ip = ::dns_getserver(0);
 	inet_ntop(AF_INET, &ip, ipAddrStr, sizeof(ipAddrStr));
-	ESP_LOGD(LOG_TAG, "DNS Server[0]: %s", ipAddrStr);
+	ESP_LOGD(LOG_TAG, "DNS Server[0]: %s", ipAddrStr); */
 } // dump
 
 
