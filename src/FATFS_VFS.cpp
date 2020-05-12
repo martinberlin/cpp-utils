@@ -8,7 +8,7 @@
 #include "FATFS_VFS.h"
 #include <esp_err.h>
 
-#include <esp_vfs_fat.h>
+#include <fatfs/vfs/esp_vfs_fat.h>
 
 
 /**
