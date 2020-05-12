@@ -9,7 +9,7 @@
 #define COMPONENTS_CPP_UTILS_FATFS_VFS_H_
 #include <string>
 extern "C" {
-#include <fatfs/vfs/esp_vfs_fat.h>
+#include <esp_vfs_fat.h>
 #include <wear_levelling.h>
 }
 /**
