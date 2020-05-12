@@ -39,9 +39,8 @@
 #include "GeneralUtils.h"
 
 #include <esp_log.h>
-// Please note that for esp32s2 needs to refer to
-// esp_rom/include/esp32s2/rom/sha.h
-#include <esp_rom/include/esp32/rom/sha.h>
+// Please note that for esp32s2 needs to refer to another include
+#include <esp32/sha.h>
 
 #define STATE_NAME  0
 #define STATE_VALUE 1
