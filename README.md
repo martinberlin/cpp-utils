@@ -8,6 +8,28 @@ All that I did is to copy his files and enable them to be added as a ESP-IDF sub
 And this great resource should be compiled and available in your ESP-IDF Project.
 I may update this from time to time if I find compiling errors, just file an Issue, and add how to reproduce it, if you find one.
 
+### Compiling with warnings
+
+    [10/10] Generating binary image from built executable
+    esptool.py v3.0-dev
+    Generated /home/martin/esp/examples/cale-idf/build/hello-world.bin
+    Project build complete.
+
+Please note that Socket component needs to be refactored so all components depending on it have been renamed to *.cpp.txt and won't be available to be included in your project:
+
+    Socket.h
+    FTPServer.h
+    HttpParser.h
+    HttpResponse.h
+    HttpRequest.h
+    PubSubClient.h
+    TFTP.h
+    WebSocket.h
+    WebSocketFileTransfer.h
+
+If someone forks this and fixes the Socket component then we could make this ones work again.
+Pull requests are welcome!
+
 ### Enabling C++ exception handling
 
 Note from **martinberlin**
